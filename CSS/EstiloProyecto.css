@@ -1,0 +1,207 @@
+/* Estilos generales*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #706560;
+    color: #333;
+}
+
+/* Estilos del menú principal */
+.Menu_principal {
+    background-color: #86530c;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.Menu_principal .logo img {
+    height: 50px; /* Ajusta el tamaño del logo */
+    vertical-align: middle;
+}
+
+.Menu_principal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Para centrar los items del menú */
+}
+
+.Menu_principal li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.Menu_principal a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px; /* Bordes redondeadas */
+}
+
+.Menu_principal a:hover {
+    background-color: #07a85d; /* Un azul más oscuro al pasar el mouse */
+}
+
+/* Estilos para las imágenes principales (Página de inicio) */
+#Ciclo, #Ciclo2 {
+    width: 100%; /* Ocupar todo el ancho */
+    max-width: 1200px; /* Ancho máximo */
+    height: auto; /* Altura automática para mantener la proporción */
+    display: block;
+    margin: 20px auto; /* Centrar y dar espacio arriba y abajo */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Ajuste para el pre (eliminar el espacio extra) */
+pre {
+    display: none; /* Oculta el elemento pre */
+}
+
+/* Estilos para la sección de imágenes extra (Página de inicio) */
+.imagenes-extra {
+    display: flex; /* Usar flexbox para la disposición horizontal */
+    justify-content: space-around; /* Distribuir las imágenes equitativamente */
+    align-items: center; /* Centrar verticalmente */
+    padding: 20px;
+    max-width: 1200px; /* Ancho máximo */
+    margin: 20px auto; /* Centrar el contenedor */
+}
+
+.imagenes-extra a {
+    display: inline-block; /* Convertir el enlace en un bloque en línea */
+    width: 22%; /* El mismo ancho que las imágenes */
+    height: 200px; /* La misma altura que las imágenes */
+}
+
+.imagenes-extra img {
+    width: 100%; /* La imagen ocupa todo el ancho del enlace */
+    height: 100%; /* La imagen ocupa toda la altura del enlace */
+    object-fit: cover; /* Recortar y escalar la imagen para llenar el espacio */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Transición suave para el hover */
+}
+
+.imagenes-extra img:hover {
+    transform: scale(1.05); /* Ligeramente más grande al pasar el mouse */
+}
+
+/* Estilos para el contenedor principal de los autos (Página de Autos) */
+.autos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Estilos para cada auto (Página de Autos) */
+.auto {
+    width: 45%; /* Ajustar según sea necesario */
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Asegurar que los bordes redondeados se apliquen */
+    background-color: white;
+}
+
+.auto img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilos para las estadísticas del auto (Página de Autos) */
+.auto-stats {
+    padding: 15px;
+}
+
+.stat-bar {
+    margin-bottom: 10px;
+}
+
+.stat-bar label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.stat-bar progress {
+    width: 70%;
+    height: 10px;
+    appearance: none;
+    -webkit-appearance: none; /* Para compatibilidad con Chrome y Safari */
+    border: none;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+/* Estilos para las barras de progreso en Chrome y Safari */
+progress::-webkit-progress-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #4CAF50; /* Color de la barra */
+    border-radius: 5px;
+}
+
+/* Estilos para las barras de progreso en Firefox */
+progress::-moz-progress-bar {
+    background-color: #4CAF50; /* Color de la barra */
+    border-radius: 5px;
+}
+
+.stat-bar span {
+    margin-left: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Estilos para la descripción del auto (Página de Autos) */
+.auto-description {
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+.auto-description p {
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .Menu_principal ul {
+        display: block;
+    }
+
+    .Menu_principal li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .imagenes-extra {
+        flex-direction: column;
+    }
+
+    .imagenes-extra a {
+        width: 100%;
+        height: auto;
+    }
+
+    .imagenes-extra img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .autos-container {
+        flex-direction: column;
+    }
+
+    .auto {
+        width: 100%;
+    }
+}
