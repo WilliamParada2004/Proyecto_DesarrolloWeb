@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <meta name="viewpoint" content="Width=device-width, initial-scale=1.0" />
+        <title>Consecionario Tulio</title>
+        <link rel="stylesheet" href="Css/EstiloProyecto.css">
+        <link rel="icon" type="image/png" href="Imagenes/logo.png">
+    </head>
+    <body>
+        <nav class="Menu_principal">
+            <a href="Inicio.html" class="logo">
+                <img src="Imagenes/logo.png" alt="Logo del concesionario">
+            </a>
+            <ul> <!-- UL es para hacer listas -->
+                <li><a href="Inicio.html">INICIO</a></li> <!-- LI Para hacer las secciones -->
+                <li><a href="Autos.html">AUTOMOVILES</a></li>
+                <li><a href="Motos.html">MOTOCICLETAS</a></li>
+                <li><a href="Contactos.html">CONTACTOS</a></li>
+            </ul>
+        </nav>
+
+        <!--Pagina indice-->
+        <a href="Autos.html">
+        <img id="Ciclo" src="Imagenes/Primero.jpg" alt="PrincipalNo1" width="1200" height="600" style="display: block; margin: 0 auto;" >
+        </a>     
+        <pre>
+
+
+ 
+        </pre>
+        <a href="Motos.html">
+        <img id="Ciclo2" src="Imagenes/PrimeroMotos.jpg" alt="PrincipalNo1" width="1200" height="600" style="display: block; margin: 0 auto;">
+        </a>
+
+        <script>
+            const imagenes = ["Imagenes/Primero.jpg", "Imagenes/Segundo.jpg", "Imagenes/Tercero.jpg"]; // Lista de imágenes
+            let indice = 0; // Índice de la imagen actual
+            const imagenes2 = ["Imagenes/PrimeroMotos.jpg", "Imagenes/SegundoMotos.jpg", "Imagenes/TerceroMotos.jpg"]; // Lista de imágenes
+            let indice2 = 0; // Índice de la imagen actual
+        
+            function cambiarImagen() {
+                document.getElementById("Ciclo").src = imagenes[indice]; // Cambia la imagen
+                indice = (indice + 1); // Alterna entre 0 y 1
+                if (indice==3) {
+                    indice = 0;
+                }
+            }
+
+            function cambiarImagen2() {
+                document.getElementById("Ciclo2").src = imagenes2[indice2]; // Cambia la imagen
+                indice2 = (indice2 + 1); // Alterna entre 0 y 1
+                if (indice2==3) {
+                    indice2 = 0;
+                }
+            }
+
+            setInterval(cambiarImagen, 3250); // Cambia la imagen cada 3 segundos (3500 ms)
+            setInterval(cambiarImagen2, 3800); // Cambia la imagen cada 3 segundos (3500 ms)
+        </script>
+
+        <!-- Sección de imágenes Extra -->
+        <div class="imagenes-extra">
+            <a href="Contactos.html">
+                <img src="Imagenes/Extra1.jpg" alt="Extra 1">
+            </a>
+            <a href="Contactos.html">
+                <img src="Imagenes/Extra2.png" alt="Extra 2">
+            </a>
+            <a href="Contactos.html">
+                <img src="Imagenes/Extra3.jpeg" alt="Extra 3">
+            </a>
+            <a href="Contactos.html">
+                <img src="Imagenes/Extra4.jpg" alt="Extra 4">
+            </a>
+        </div>
+    </body>
+</html>
