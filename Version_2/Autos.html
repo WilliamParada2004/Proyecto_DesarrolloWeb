@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automoviles - Concesionario Tulio</title>
+    <link rel="stylesheet" href="Css/cssBootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/EstiloProyecto.css">
+</head>
+<body>
+    <nav class="Menu_principal">
+        <a href="Index.html" class="logo">
+            <img src="Imagenes/logo.png" alt="Logo del concesionario">
+        </a>
+        <ul> 
+            <li><a href="Index.html">INICIO</a></li> 
+            <li><a href="Autos.html">AUTOMOVILES</a></li>
+            <li><a href="Motos.html">MOTOCICLETAS</a></li>
+            <li><a href="Contactos.html">CONTACTOS</a></li>
+        </ul>
+    </nav>
+
+    <div class="container my-5">
+        <div class="autos-container">
+
+            <div class="auto">
+                <img src="Imagenes/Primero.jpg" alt="Ford Raptor">
+                <div class="auto-stats">
+                    <div class="stat-bar">
+                        <label for="potencia">Potencia:</label>
+                        <progress id="potencia" value="75" max="100"></progress>
+                        <span>75%</span>
+                    </div>
+                    <div class="stat-bar">
+                        <label for="rendimiento">Rendimiento:</label>
+                        <progress id="rendimiento" value="60" max="100"></progress>
+                        <span>60%</span>
+                    </div>
+                    <div class="stat-bar">
+                        <label for="seguridad">Seguridad:</label>
+                        <progress id="seguridad" value="80" max="100"></progress>
+                        <span>80%</span>
+                    </div>
+                </div>
+                <div class="auto-description">
+                    <h5>Ford Raptor | Modelo 2020</h5>
+                    <p>Un vehículo todo terreno con excelente rendimiento.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalFordRaptor">
+                        Ver detalles
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modalFordRaptor" tabindex="-1" aria-labelledby="modalFordRaptorLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalFordRaptorLabel">Detalles del Ford Raptor</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li><strong>Precio:</strong> $50,000 USD</li>
+                                <li><strong>Color:</strong> Negro</li>
+                                <li><strong>Condición:</strong> Usado</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="auto">
+                <img src="Imagenes/Segundo.jpg" alt="Dodge Challenger SRT">
+                <div class="auto-stats">
+                    <div class="stat-bar">
+                        <label for="potencia">Potencia:</label>
+                        <progress id="potencia" value="85" max="100"></progress>
+                        <span>85%</span>
+                    </div>
+                    <div class="stat-bar">
+                        <label for="rendimiento">Rendimiento:</label>
+                        <progress id="rendimiento" value="70" max="100"></progress>
+                        <span>70%</span>
+                    </div>
+                    <div class="stat-bar">
+                        <label for="seguridad">Seguridad:</label>
+                        <progress id="seguridad" value="90" max="100"></progress>
+                        <span>90%</span>
+                    </div>
+                </div>
+                <div class="auto-description">
+                    <h5>Dodge Challenger SRT | Modelo 2018</h5>
+                    <p>Un muscle car clásico con gran potencia.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDodgeChallenger">
+                        Ver detalles
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modalDodgeChallenger" tabindex="-1" aria-labelledby="modalDodgeChallengerLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalDodgeChallengerLabel">Detalles del Dodge Challenger SRT</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li><strong>Precio:</strong> $45,000 USD</li>
+                                <li><strong>Color:</strong> Rojo</li>
+                                <li><strong>Condición:</strong> Usado</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="auto">
+                <img src="Imagenes/Tercero.jpg" alt="Chevrolet Camaro">
+                <div class="auto-stats">
+                    <div class="stat-bar">
+                        <label for="potencia">Potencia:</label>
+                        <progress id="potencia" value="65" max="100"></progress>
+                        <span>65%</span>
+                    </div>
+                    <div class="stat-bar">
+                        <label for="rendimiento">Rendimiento:</label>
+                        <progress id="rendimiento" value="50" max="100"></progress>
+                        <span>50%</span>
+                    </div>
+                    <div class="stat-bar">
+                        <label for="seguridad">Seguridad:</label>
+                        <progress id="seguridad" value="70" max="100"></progress>
+                        <span>70%</span>
+                    </div>
+                </div>
+                <div class="auto-description">
+                    <h5>Chevrolet Camaro | Modelo 2023</h5>
+                    <p>Diseño moderno y rendimiento excepcional.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalChevroletCamaro">
+                        Ver detalles
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modalChevroletCamaro" tabindex="-1" aria-labelledby="modalChevroletCamaroLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalChevroletCamaroLabel">Detalles del Chevrolet Camaro</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li><strong>Precio:</strong> $60,000 USD</li>
+                                <li><strong>Color:</strong> Amarillo</li>
+                                <li><strong>Condición:</strong> Nuevo</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="auto">
+                <img src="Imagenes/Cuarto.jpg" alt="Audi Q2">
+                <div class="auto-stats">
+                    <div class="stat-bar">
+                        <label for="potencia">Potencia:</label>
+                        <progress id="potencia" value="95" max="100"></progress>
+                        <span>95%</span>
+                    </div>
+                    <div class="stat-bar">
+                        <label for="rendimiento">Rendimiento:</label>
+                        <progress id="rendimiento" value="80" max="100"></progress>
+                        <span>80%</span>
+                    </div>
+                    <div class="stat-bar">
+                        <label for="seguridad">Seguridad:</label>
+                        <progress id="seguridad" value="100" max="100"></progress>
+                        <span>100%</span>
+                    </div>
+                </div>
+                <div class="auto-description">
+                    <h5>Audi Q2 | Modelo 2023</h5>
+                    <p>Un SUV compacto con estilo y tecnología avanzada.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAudiQ2">
+                        Ver detalles
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modalAudiQ2" tabindex="-1" aria-labelledby="modalAudiQ2Label" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalAudiQ2Label">Detalles del Audi Q2</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <ul>
+                                <li><strong>Precio:</strong> $40,000 USD</li>
+                                <li><strong>Color:</strong> Blanco</li>
+                                <li><strong>Condición:</strong> Nuevo</li>
+                            </ul>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./Js/jsBootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
