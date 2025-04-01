@@ -1,0 +1,155 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    color: #333333;
+}
+
+/* Contenedor principal */
+.contactos-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Información de Contacto */
+.contact-info {
+    width: 45%;
+    background-color: #F2E1C2 ;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.contact-item p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Formulario de Contacto */
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #86530C;
+    border-radius: 4px;
+    box-sizing: border-box; /* Asegura que el padding no aumente el ancho */
+}
+
+.contact-form button {
+    background-color: #744605;
+    color: #F2E1C2 ;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+/* Ubicación */
+.ubicacion {
+    width: 45%;
+    background-color: #86530C;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.ubicacion h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.ubicacion img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .contactos-container {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .ubicacion {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Media Query para Tabletas */
+@media (max-width: 1024px) {
+    .Menu_principal ul {
+      display: block;
+    }
+    .Menu_principal li {
+      display: block;
+      margin: 10px 0;
+    }
+    .imagenes-extra {
+      flex-direction: column;
+    }
+    .autos-container {
+      flex-direction: column;
+    }
+    .auto {
+      width: 100%;
+    }
+    .contactos-container {
+      flex-direction: column;
+    }
+    .contact-info,
+    .ubicacion {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Media Query para Móviles */
+  @media (max-width: 768px) {
+    .Menu_principal ul {
+      display: block;
+    }
+    .imagenes-extra {
+      flex-direction: column;
+    }
+    .autos-container {
+      flex-direction: column;
+    }
+    .auto {
+      width: 100%;
+    }
+  }  

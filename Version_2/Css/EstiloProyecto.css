@@ -1,0 +1,249 @@
+/* Estilos generales*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    color: #333333;
+}
+
+/* Estilos del menú principal */
+.Menu_principal {
+    background-color: #86530c;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.Menu_principal .logo img {
+    height: 50px; /* Ajusta el tamaño del logo */
+    vertical-align: middle;
+}
+
+.Menu_principal ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Para centrar los items del menú */
+}
+
+.Menu_principal li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.Menu_principal a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.Menu_principal a:hover {
+    background-color: #F2E1C2;
+    color: black;
+}
+
+#Ciclo, #Ciclo2 {
+    width: 100%; 
+    max-width: 1200px;
+    height: auto; 
+    display: block;
+    margin: 20px auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+pre {
+    display: none;
+}
+
+.imagenes-extra {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.imagenes-extra a {
+    display: inline-block;
+    width: 22%; 
+    height: 200px;
+}
+
+.imagenes-extra img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.imagenes-extra img:hover {
+    transform: scale(1.20);
+}
+
+/* Estilos para el contenedor principal de los autos (Página de Autos) */
+.autos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Estilos para cada auto (Página de Autos) */
+.auto {
+    width: 45%;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    background-color: white;
+}
+
+.auto img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilos para las estadísticas del auto*/
+.auto-stats {
+    padding: 15px;
+}
+
+.stat-bar {
+    margin-bottom: 10px;
+}
+
+.stat-bar label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.stat-bar progress {
+    width: 70%;
+    height: 10px;
+    appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+/* Estilos para las barras de progreso en Chrome y Safari */
+progress::-webkit-progress-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+/* Estilos para las barras de progreso en Firefox */
+progress::-moz-progress-bar {
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+
+.stat-bar span {
+    margin-left: 10px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Estilos para la descripción del auto (Página de Autos) */
+.auto-description {
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+.auto-description p {
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .Menu_principal ul {
+        display: block;
+    }
+
+    .Menu_principal li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .imagenes-extra {
+        flex-direction: column;
+    }
+
+    .imagenes-extra a {
+        width: 100%;
+        height: auto;
+    }
+
+    .imagenes-extra img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .autos-container {
+        flex-direction: column;
+    }
+
+    .auto {
+        width: 100%;
+    }
+}
+
+/* Media Query para Tabletas */
+@media (max-width: 1024px) {
+    .Menu_principal ul {
+      display: block;
+    }
+    .Menu_principal li {
+      display: block;
+      margin: 10px 0;
+    }
+    .imagenes-extra {
+      flex-direction: column;
+    }
+    .autos-container {
+      flex-direction: column;
+    }
+    .auto {
+      width: 100%;
+    }
+    .contactos-container {
+      flex-direction: column;
+    }
+    .contact-info,
+    .ubicacion {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Media Query para Móviles */
+  @media (max-width: 768px) {
+    .Menu_principal ul {
+      display: block;
+    }
+    .imagenes-extra {
+      flex-direction: column;
+    }
+    .autos-container {
+      flex-direction: column;
+    }
+    .auto {
+      width: 100%;
+    }
+  }
